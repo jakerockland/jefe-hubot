@@ -23,7 +23,7 @@ USER	hubot
 WORKDIR /hubot
 
 # Install hubot
-RUN yo hubot --owner="jefe <inside@autoscout24.com>" --name="jefe" --description="Roll, roll, rollercoaster" --defaults
+RUN yo hubot --owner="Jake <jakerockland@gmail.com>" --name="jefe" --description="Jefe the Hubot" --defaults
 
 # Some adapters / scripts
 RUN npm install hubot-slack --save && npm install
@@ -42,7 +42,8 @@ ADD hubot/hubot-scripts.json /hubot/
 ADD hubot/external-scripts.json /hubot/
 
 RUN npm install cheerio --save && npm install
-ADD hubot/scripts/hubot-lunch.coffee /hubot/scripts/
+# ADD hubot/scripts/hubot-lunch.coffee /hubot/scripts/
 
 # And go
-CMD ["/bin/sh", "-c", "aws s3 cp --region eu-west-1 s3://pgarbe-secrets/env.sh .; . ./env.sh; bin/hubot --adapter slack"]
+# CMD ["/bin/sh", "-c", "aws s3 cp --region eu-west-1 s3://pgarbe-secrets/env.sh .; . ./env.sh; bin/hubot --adapter slack"]
+CMD bin/hubot -a slack

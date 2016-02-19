@@ -6,7 +6,7 @@ require 'aws-sdk-core'
 require 'set'
 require 'autostacker24'
 
-VERSION           = ENV['CIRCLE_BUILD_NUM'] || ENV['VERSION']
+# VERSION           = ENV['CIRCLE_BUILD_NUM'] || ENV['VERSION']
 SANDBOX           = ENV['SANDBOX'] || ENV['GO_JOB_NAME'].nil? && `whoami`.strip
 
 SERVICE           = 'jefe-hubot'

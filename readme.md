@@ -1,10 +1,10 @@
-jefe HuBot
+Jefe HuBot
 ===========
 
 Idea: Setup HuBot inside a Docker container and run it on AWS. Automatically build and deploy it with CirclCI.
 
-[![Circle CI](https://circleci.com/gh/pgarbe/jefe-hubot.svg?style=svg)](https://circleci.com/gh/pgarbe/jefe-hubot)
-[![Travis CI](https://travis-ci.org/pgarbe/jefe-hubot.svg?branch=master)](https://travis-ci.org/pgarbe/jefe-hubot)
+<!-- [![Circle CI](https://circleci.com/gh/pgarbe/jefe-hubot.svg?style=svg)](https://circleci.com/gh/pgarbe/jefe-hubot) -->
+<!-- [![Travis CI](https://travis-ci.org/pgarbe/jefe-hubot.svg?branch=master)](https://travis-ci.org/pgarbe/jefe-hubot) -->
 
 
 ### Deploy manual to AWS ECS
