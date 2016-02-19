@@ -1,10 +1,10 @@
-Tatsu HuBot
+jefe HuBot
 ===========
 
 Idea: Setup HuBot inside a Docker container and run it on AWS. Automatically build and deploy it with CirclCI.
 
-[![Circle CI](https://circleci.com/gh/pgarbe/tatsu-hubot.svg?style=svg)](https://circleci.com/gh/pgarbe/tatsu-hubot)
-[![Travis CI](https://travis-ci.org/pgarbe/tatsu-hubot.svg?branch=master)](https://travis-ci.org/pgarbe/tatsu-hubot)
+[![Circle CI](https://circleci.com/gh/pgarbe/jefe-hubot.svg?style=svg)](https://circleci.com/gh/pgarbe/jefe-hubot)
+[![Travis CI](https://travis-ci.org/pgarbe/jefe-hubot.svg?branch=master)](https://travis-ci.org/pgarbe/jefe-hubot)
 
 
 ### Deploy manual to AWS ECS
@@ -17,8 +17,8 @@ Idea: Setup HuBot inside a Docker container and run it on AWS. Automatically bui
 
 
 ### How to build and run it
-    docker build -t tatsu .
-    docker run -e HUBOT_SLACK_TOKEN=xxx -d tatsu
+    docker build -t jefe .
+    docker run -e HUBOT_SLACK_TOKEN=xxx -d jefe
 
 ### Add new scripts
 1. Add the following line in the dockerfile to install the NodeJS module:

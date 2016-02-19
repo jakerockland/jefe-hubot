@@ -5,12 +5,12 @@ services:
 install:
   - gem install bundler
   - bundle install
-  
+
 script:
   - docker info
-  - docker build -t pgarbe/tatsu-hubot:v_TRAVIS_BUILD_NUMBER .
+  - docker build -t pgarbe/jefe-hubot:v_TRAVIS_BUILD_NUMBER .
 
 deploy:
   - docker login -e DOCKER_EMAIL -u DOCKER_USER -p DOCKER_PASS
-  - docker push pgarbe/tatsu-hubot:v_TRAVIS_BUILD_NUMBER
+  - docker push pgarbe/jefe-hubot:v_TRAVIS_BUILD_NUMBER
   - bundle exec rake create_or_update

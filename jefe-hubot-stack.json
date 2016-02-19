@@ -22,10 +22,10 @@
       "Properties" : {
         "ContainerDefinitions" : [
           {
-            "Name": "tatsu-hubot",
+            "Name": "jefe-hubot",
             "Cpu": "10",
             "Essential": "true",
-            "Image":"pgarbe/tatsu-hubot:v_@ContainerVersion",
+            "Image":"pgarbe/jefe-hubot:v_@ContainerVersion",
             "Memory":"250" /*,
             "PortMappings": [
               { "HostPort": 80, "ContainerPort": 80 },
@@ -62,7 +62,7 @@
         "DesiredCount": "1",
         /*"LoadBalancers": [
           {
-            "ContainerName": "tatsu-hubot",
+            "ContainerName": "jefe-hubot",
             "ContainerPort": "80",
             "LoadBalancerName" : { "Ref" : "EcsElasticLoadBalancer" }
           }

@@ -21,7 +21,7 @@ module.exports = (robot) ->
           checkSnackAttack msg
         else
           msg.send "Send a PR to support this canteen!"
-          msg.send "https://github.com/pgarbe/tatsu-hubot"
+          msg.send "https://github.com/pgarbe/jefe-hubot"
     else
       checkSnackAttack msg
       checkLeitwerk msg

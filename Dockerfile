@@ -23,7 +23,7 @@ USER	hubot
 WORKDIR /hubot
 
 # Install hubot
-RUN yo hubot --owner="Tatsu <inside@autoscout24.com>" --name="Tatsu" --description="Roll, roll, rollercoaster" --defaults
+RUN yo hubot --owner="jefe <inside@autoscout24.com>" --name="jefe" --description="Roll, roll, rollercoaster" --defaults
 
 # Some adapters / scripts
 RUN npm install hubot-slack --save && npm install
